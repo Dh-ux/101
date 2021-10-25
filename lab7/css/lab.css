@@ -1,0 +1,18 @@
+h1
+   {
+     Color:blue;
+   }
+h2
+   {
+     font-size:32px;
+   }
+p
+   {
+       font-size:14px;
+       font-weight:bold;
+   }
+div.output {
+  margin: 10px;
+  background-color: #d2eff5;
+  padding: 20px;
+   }
