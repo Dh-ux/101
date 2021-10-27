@@ -2,7 +2,6 @@
 * Author: Lexin Xiong <lxiong19@ucsc.edu>
 * Created: 24 October
 */
-
 //code for shuffle from https://www.codespeedy.com/shuffle-characters-of-a-string-in-javascript/
 function shuffleUserName(){
   userNameshuffle = userName.toLowerCase().split("")
@@ -13,6 +12,7 @@ function shuffleUserName(){
   shuffledName = userNameshuffle.join("");
   return shuffledName
 };
+//My previous shuffle code
 //function shuffleUserName(){
   //shuffle = ("")
   //userNameshuffle = userName.split("")
@@ -28,7 +28,6 @@ function sortUserName() {
   sortedName = userNamelower.sort().join("");
   return sortedName;
 }
-
 var userName = prompt("Hi. Please tell me your name so I can fix it.", "");
 
 document.writeln("Oh hey, I've fixed your name: ", sortUserName(),"</br>");

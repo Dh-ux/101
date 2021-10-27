@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<title>Lab 8 - Anon Functions and Callbacks</title>
+	<script src = "js/lab.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
 </head>
 <body>
+	<h1>Lab 8: Anon Functions and Callbacks</h1>
+	<h2>Challenge</h2>
+			<p>Our challenge is to experiment with anonymous functions and callbacks with
+        our partner.</p>
+		<h2>Problems</h2>
+			<p>My partner and I did not have any big problems with the code.</p>
+		<h2>Results</h2>
+			<p>The output is in the console, be sure to take a look!</p>
+			<div class = "output"
+       <div id="output">
+       </div>
+	  	</div>
 
+            <script>
+              var outputEl = document.getElementById("output");
+              outputEl.innerHTML = "what is the square root of 100?    " + sqrt(100) +
+              "<br /><br /> what is the square root of 5?    " + sqrt(5)+"<br /><br />The array is:,   " + array +
+              "<br /><br/> what is the square root of this array?       <br />Ans: " + array.map(sqrt) +
+              "<br /><br />What is the result of the same array multiply by 0.2?     <br />Ans: " +
+              array.map(function(x){return x*0.2});
+            </script>
 </body>
 </html>
