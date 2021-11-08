@@ -1,0 +1,36 @@
+
+.sectionbox {
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.special {
+  background-color: #fdf7ed;
+  border: solid 1px maroon;
+}
+
+#bonus {
+  color: black;
+}
+
+button {
+  border: none;
+  padding: 8px;
+}
+
+button:hover {
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.special button {
+  color: #0000FF;
+}
+
+.buttonChange {
+  border-radius: 0px;
+  color: #654321;
+  background-color: white
+}
