@@ -3,9 +3,7 @@
 * date. 11/29/21
 */
 
-//var myUrl = "http://numbersapi.com/42/math";
-//var myUrl = "https://api.kanye.rest/";
-var myUrl = "https://dinosaur-facts-api.shultzlab.com/dinosaurs/random";
+var myUrl = "http://numbersapi.com/random/year";
 
 $("#activate").click(callAjax);
 
