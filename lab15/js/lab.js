@@ -18,7 +18,7 @@ function callAjax() {
       // POST or GET request
       type: "GET",
       // data type we expect back
-      dataType : "json",
+      //dataType : "json",
   })
   // If the request succeeds
   // data is passed back
