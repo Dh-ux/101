@@ -7,7 +7,7 @@
 
 
 
- var myUrl = "https://xkcd.com/info.0.json";
+ var myUrl = "https://xkcd.com/203/info.0.json";
 
  $("#activate").click(runAPI);
 
