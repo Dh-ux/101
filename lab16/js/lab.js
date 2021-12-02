@@ -6,31 +6,44 @@
  **/
 
 
-var myUrl= "https://xkcd.com/200/info.0.json";
- // Using the core $.ajax() method
-function callAjax(){
-  console.log("running");
+ var myUrl = "https://xkcd.com/info.0.json";
 
+ $("#activate").click(callAjax);
+
+ function callAjax() {
+   console.log("click");
+   // Using the core $.ajax() method
    $.ajax({
-       // The URL for the request (from the api docs)
+       // API endpoint
        url: myUrl,
+       // Any data to send
+       // data: { id: 123},
+       // POST or GET request
        type: "GET",
-       dataType: "json",
-  })
+       // data type we expect back
+       dataType : "json",
+   })
+   // If the request succeeds
+   // data is passed back
+   .done(function(data) {
+       console.log("Success:", data);
+       //$("#output").html(JSON.stringify(data));
+       var comicObj = data;
+       var title = document.createElement('p');
+       title= comicObj.title;
+       $("#output").html("<h1>" + title + "</h1");
+       var imgTag = "<img src=" + comicObj.img + ">";
+       $("#output").append(imgTag);
+       var imgAlt= document.createElement('p');
+       imgAlt= comicObj.alt;
+       $("#output").append("<p>" + imgAlt + "</p>");
 
 
-  .done(function(data) {
-    console.log("Success:", data);
-    var comicObj= data;
-    $("#output").html(comicObj.title);
-    var imgTag = "<p> </p> <img src=" + comicObj.img + ">";
-    $("#output").append(imgTag);
-  })
+   })
+   // If the request fails
+   .fail(function(request,error) {
+       console.log(request, error);
 
-  .fail(function(request, error) {
-    console.log(request, error);
-  })
+ 	})
 
-}
-
-callAjax();
+ }
